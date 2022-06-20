@@ -1,30 +1,14 @@
-import React from 'react';
 import { useRoutes } from 'react-router-dom';
-import RoutePath from './RoutePath';
-import * as Pages from '../Pages';
+import RootRoute from './Routes/RootRoute';
+import ProfileRoute from './Routes/ProfileRoute';
+import ChatterboxRoute from './Routes/ChatterboxRoute';
+import TechnologyRoute from './Routes/TechnologyRoute';
 
-const RootRouter = () => {
-  const {
-    rootPath, profilePath, chatterboxPath, technologyPath,
-  } = RoutePath;
-  return useRoutes([
-    {
-      path: rootPath,
-      element: <div>rootPage</div>,
-    },
-    {
-      path: profilePath,
-      element: <Pages.ProfilePage />,
-    },
-    {
-      path: chatterboxPath,
-      element: <Pages.ChatterboxPage />,
-    },
-    {
-      path: technologyPath,
-      element: <Pages.TechnologyPage />,
-    },
-  ]);
-};
+const RootRouter = () => useRoutes([
+  RootRoute,
+  ProfileRoute,
+  ChatterboxRoute,
+  TechnologyRoute,
+]);
 
 export default RootRouter;

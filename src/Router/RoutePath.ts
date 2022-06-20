@@ -1,8 +1,13 @@
+export const RootPath = '/';
+export const ProfilePath = '/profile';
+export const ChatterboxPath = '/chatterbox';
+export const TechnologyPath = '/technology';
+
 const RouterPath = {
-  rootPath: '/',
-  profilePath: '/profile',
-  chatterboxPath: '/chatterbox',
-  technologyPath: '/technology',
+  RootPath,
+  ProfilePath,
+  ChatterboxPath,
+  TechnologyPath,
 };
 
 export default RouterPath;

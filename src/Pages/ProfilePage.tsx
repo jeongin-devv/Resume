@@ -1,11 +1,9 @@
 import React from 'react';
 
-export const ProfilePage = () => {
+const ProfilePage = () => {
   const text = 'profile';
   return (
-    <div>
-      {text}
-    </div>
+    <div>{text}</div>
   );
 };
 

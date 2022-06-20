@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfilePage = () => {
+export const ProfilePage = () => {
   const text = 'profile';
   return (
     <div>

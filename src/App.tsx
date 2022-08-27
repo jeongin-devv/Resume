@@ -1,5 +1,5 @@
 import React from 'react';
-import { RootStoreProvider } from 'Store/RootStore';
+import { RootStoreProvider } from './Store/RootStore';
 import RootRouter from './Router/RootRouter';
 import './App.css';
 

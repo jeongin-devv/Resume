@@ -1,10 +1,8 @@
 import * as React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import SectionMenu from '@mui/material/Link';
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -16,11 +14,16 @@ interface HeaderProps {
 
 const Header = (props: HeaderProps) => {
   const { sections, title } = props;
+  const navigation = useNavigate();
+
+  const sectionHandler = (event : React.MouseEvent, url : string) => {
+    event.preventDefault();
+    navigation(url);
+  };
 
   return (
     <>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Subscribe</Button>
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'white' }}>
         <Typography
           component="h2"
           variant="h5"
@@ -29,31 +32,34 @@ const Header = (props: HeaderProps) => {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+            {title}
+          </Link>
         </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
-        </Button>
       </Toolbar>
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
+        sx={{
+          justifyContent: 'space-around',
+          overflowX: 'auto',
+          borderBottomWidth: 3,
+          borderBottomStyle: 'double',
+          borderColor: 'white',
+        }}
       >
         {sections.map((section) => (
-          <Link
+          <SectionMenu
             color="inherit"
             noWrap
             key={section.title}
             variant="body2"
             href={section.url}
             sx={{ p: 1, flexShrink: 0 }}
+            onClick={(event : React.MouseEvent) => { sectionHandler(event, section.url); }}
           >
             {section.title}
-          </Link>
+          </SectionMenu>
         ))}
       </Toolbar>
     </>

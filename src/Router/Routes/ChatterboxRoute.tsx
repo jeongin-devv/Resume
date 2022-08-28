@@ -1,9 +1,9 @@
 import React from 'react';
 import { RouteObject } from 'react-router-dom';
-import { ChatterboxPage } from '../../Pages';
+import { Chatterbox } from '../../Pages';
 import { ChatterboxPath as path } from '../RoutePath';
 
-const element = <ChatterboxPage />;
+const element = <Chatterbox />;
 
 const ChatterboxRoute : RouteObject = {
   path,

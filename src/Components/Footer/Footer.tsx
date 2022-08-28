@@ -5,10 +5,10 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 const Copyright = () => {
-  const copyrightName = 'Zayden';
-  const domain = 'https://mui.com/';
+  const copyrightName = 'Jeongin Oh';
+  const domain = 'https://github.com/jeongin-devv';
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography variant="body2" color="white" align="center">
       {'Copyright © '}
       <Link color="inherit" href={domain}>
         {copyrightName}
@@ -28,16 +28,22 @@ const Footer = (props: FooterProps) => {
   const { description, title } = props;
 
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+    <Box
+      component="footer"
+      sx={{
+        py: 3, borderTopStyle: 'double', borderTopWidth: 3, borderColor: 'white',
+      }}
+    >
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography variant="h6" align="center" sx={{ marginBottom: 0 }} gutterBottom>
           {title}
         </Typography>
         <Typography
           variant="subtitle1"
           align="center"
-          color="text.secondary"
+          color="gray"
           component="p"
+          sx={{ textDecoration: 'underline' }}
         >
           {description}
         </Typography>

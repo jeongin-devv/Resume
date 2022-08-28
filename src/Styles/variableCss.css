@@ -1,0 +1,5 @@
+:root {
+  --app-container-height: calc(100vh - 7.1875rem);
+  --main-container-padding: 2rem;
+  --main-container-width: inherit;
+}

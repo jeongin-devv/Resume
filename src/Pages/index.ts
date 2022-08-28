@@ -1,3 +1,3 @@
-export { default as ProfilePage } from './Profile/Profile';
-export { default as ChatterboxPage } from './Chatterbox/Chatterbox';
-export { default as TechnologyPage } from './Technology/Technology';
+export { default as Profile } from './Profile/Profile';
+export { default as Chatterbox } from './Chatterbox/Chatterbox';
+export { default as Technology } from './Technology/Technology';

@@ -1,9 +1,9 @@
 import React from 'react';
 import { RouteObject } from 'react-router-dom';
-import { TechnologyPage } from '../../Pages';
+import { Technology } from '../../Pages';
 import { TechnologyPath as path } from '../RoutePath';
 
-const element = <TechnologyPage />;
+const element = <Technology />;
 
 const TechnologyRoute : RouteObject = {
   path,

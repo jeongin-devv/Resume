@@ -21,11 +21,11 @@ const Copyright = () => {
 
 interface FooterProps {
   description: string;
-  title: string;
+  // title: string;
 }
 
 const Footer = (props: FooterProps) => {
-  const { description, title } = props;
+  const { description } = props;
 
   return (
     <Box
@@ -35,9 +35,6 @@ const Footer = (props: FooterProps) => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" sx={{ marginBottom: 0 }} gutterBottom>
-          {title}
-        </Typography>
         <Typography
           variant="subtitle1"
           align="center"

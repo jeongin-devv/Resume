@@ -1,10 +1,9 @@
 import React from 'react';
-import Markdown from 'Components/Markdown/Markdown';
-import mainPost from 'Markdown/main';
 import { MainContainer } from './styles';
+import CustomContainer from '../../Components/Container/Container';
 
 export default () => (
   <MainContainer>
-    <Markdown>{mainPost}</Markdown>
+    <CustomContainer title="Introduce" />
   </MainContainer>
 );

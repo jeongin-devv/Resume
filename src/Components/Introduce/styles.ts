@@ -1,42 +1,24 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import styled from 'styled-components';
 
 export const IntroduceContainer = styled(Box)`
   --container-width:100%;  
   --container-display:block;
+  --container-padding:24px 0;
   
-  display:var(--container-display);
-  width:var(--container-width);
-
-  @media screen and (min-width:768px) and (max-width: 1023px) {
-    /* Tablet */
-  }
-  @media screen and (max-width:767px){ 
-    /* Mobile */
-  }
   &.MuiBox-root {
     display:var(--container-display);
     width:var(--container-width);
+    padding:var(--container-padding);
   }
 `;
 
-export const Title = styled(Box)`
-  --container-title-width:100px;
+export const Title = styled(Typography)`
   --container-title-font-size: 24px;
   --container-title-font-weight:700;
 
-  @media screen and (min-width:768px) and (max-width: 1023px) {
-    /* Tablet */
-  }
-  @media screen and (max-width:767px){ 
-    /* Mobile */
-  } 
-  &.MuiBox-root {
+  &.MuiTypography-root {
     font-size:var(--container-title-font-size);
     font-weight:var(--container-title-font-weight);
   }
-`;
-
-export const Contents = styled(Box)`
-
 `;

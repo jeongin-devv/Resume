@@ -5,14 +5,6 @@ import RootRouter from 'Router/RootRouter';
 import { AppContainer, AppContents } from './styles';
 
 const HeaderTitle = 'Resume : Per Aspera ad Astra';
-
-// const sections = [
-//   { title: 'Profile', url: ProfilePath },
-//   { title: 'Technology', url: TechnologyPath },
-//   { title: 'ChatterBox', url: ChatterboxPath },
-//   { title: 'Environment', url: EnvironmentPath },
-// ];
-
 const footerDescription = '역경을 헤치고 저 별을 향해';
 
 const App = () => (

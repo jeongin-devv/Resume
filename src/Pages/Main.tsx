@@ -1,9 +1,9 @@
 import React from 'react';
+import Introduce from 'Components/Introduce/Introduce';
 import { MainContainer } from './styles';
-import CustomContainer from '../../Components/Container/Container';
 
 export default () => (
   <MainContainer>
-    <CustomContainer title="Introduce" />
+    <Introduce title="Introduce" />
   </MainContainer>
 );

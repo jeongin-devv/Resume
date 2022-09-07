@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from 'Pages/Main/Main';
+import Main from 'Pages/Main';
 import { RouteObject } from 'react-router-dom';
 import { RootPath as path } from '../RoutePath';
 

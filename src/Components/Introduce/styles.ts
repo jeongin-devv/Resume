@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import styled from 'styled-components';
 
-export const CustomContainer = styled(Box)`
+export const IntroduceContainer = styled(Box)`
   --container-width:100%;  
   --container-display:block;
   

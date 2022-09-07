@@ -5,6 +5,9 @@ export const AppContainer = styled.div`
 `;
 
 export const AppContents = styled.div`
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width:100vw;
   padding:0;
   height:var(--app-container-height);

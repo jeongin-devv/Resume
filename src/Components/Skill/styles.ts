@@ -68,27 +68,74 @@ export const SkillBox = styled(Box)`
     align-items:center;
     padding:16px 0;
   }
-  & .MuiGrid-item{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    // padding:0 !important;
+`;
+
+export const SkillList = styled(Box)`
+  --container-columns:1fr 1fr 1fr;
+
+  @media (max-width: 800px) {
+    --container-columns:1fr 1fr;
+  }
+
+  &.MuiBox-root {
+    width:75%;
+    display:grid;
+    grid-template-columns: var(--container-columns);
+    text-align:center;
   }
 `;
 
 export const SkillName = styled(Box)`
   &.MuiBox-root {
-    width:150px;
+    width:25%;
     display:flex;
     justify-content:center;
+
+    @media (max-width: 800px) {
+      justify-content:flex-start;
+    }
     align-items:center;
+  }
+
+  & .MuiTypography-root {
+    font-size:20px;
+
+    @media (max-width: 800px) {
+      font-size:16px;
+    }
   }
 `;
 
-export const SkillList = styled.ul`
-
+export const Skill = styled(Box)`
+  &.MuiBox-root {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding:4px 0;
+    font-size:14px;
+  }
 `;
 
-export const SkillLevel = styled.span`
+export const SkillLevel = styled.span<{level : number}>`
+  ${(props) => {
+    if (props.level === 3) {
+      return 'background-color:#4169E1;';
+    }
+    if (props.level === 2) {
+      return 'background-color:#808080;';
+    }
+    return 'background-color:#A9A9A9;';
+  }}
+  padding:4px 8px;
+  margin-right:4px;
+  border-radius:16px;
+  font-weight: 700;
+`;
 
+export const SkillDot = styled.div`
+  width:4px;
+  height:4px;
+  border-radius:4px;
+  background-color: #FFFFFF;
+  margin-right:6px;
 `;

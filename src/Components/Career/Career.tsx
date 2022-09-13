@@ -4,7 +4,7 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
-  CareerContainer, TitleBox, Title, CareerAccordion, CareerSpan,
+  CareerContainer, TitleBox, Title, CareerAccordion, CareerSpan, CareerDot, CareerLine,
 } from './styles';
 
 export default () => (
@@ -24,6 +24,12 @@ export default () => (
         <Typography sx={{ paddingLeft: '16px', color: 'rgba(255, 255, 255, 0.8)', fontWeight: '700' }}>
           Service Platform Team 1 / Developer
         </Typography>
+        <CareerLine sx={{ paddingLeft: '16px' }}>
+          <CareerDot />
+          <Typography sx={{ paddingLeft: '', color: 'rgba(255, 255, 255, 0.8)' }}>
+            Service Platform Team 1 / Developer
+          </Typography>
+        </CareerLine>
       </AccordionDetails>
     </CareerAccordion>
   </CareerContainer>

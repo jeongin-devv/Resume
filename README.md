@@ -1,9 +1,7 @@
 ## Hold off
-## Personal Development Blog 
-  by. Jeongin.oh (Zayden) 
+## Resume
 
-> ## Blog Development Environment
->  > **IDE :** Visual Studio Code for MacOS  
->  > **Skill :** React, TypeScript, ES6+, Styled-Component, Context-API,
+>  > **IDE :** vsCode for MacOS  
+>  > **Skill :** React, TypeScript, ES6+, Styled-Component,
 >  > React-Router, React-MobX, Material-UI
 ***

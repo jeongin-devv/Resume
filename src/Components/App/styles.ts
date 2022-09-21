@@ -7,8 +7,8 @@ export const AppContainer = styled.div`
 export const AppContents = styled.div`
   display:flex;
   justify-content: center;
-  align-items: center;
   width:100vw;
+  box-sizing: border-box;
   padding:0;
   height:var(--app-container-height);
   overflow-y: scroll;

@@ -33,6 +33,7 @@ export const Title = styled(Typography)`
 
 export const CareerAccordion = styled(Accordion)`
   &.MuiAccordion-root{
+    margin-top:16px;
     border-radius:16px !important;
     background-color: rgba( 255, 255, 255, 0.13 );
     color: #FFFFFF;
@@ -42,7 +43,7 @@ export const CareerAccordion = styled(Accordion)`
 export const CareerSpan = styled.span`
   padding: 4px 16px;
   border-radius:16px;
-  font-size:20px;
+  font-size:16px;
   font-weight:700;
   line-height:20px;
   background-color: rgba( 255, 255, 255, 0.2 );
@@ -62,5 +63,6 @@ export const CareerLine = styled(Box)`
     display:flex;
     justify-content:flex-start;
     align-items:center;
+    
   }
 `;

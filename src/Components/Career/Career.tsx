@@ -1,36 +1,15 @@
 import React from 'react';
-import {
-  AccordionDetails, AccordionSummary, Typography,
-} from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import {
-  CareerContainer, TitleBox, Title, CareerAccordion, CareerSpan, CareerDot, CareerLine,
-} from './styles';
+import { CareerContainer, TitleBox, Title } from './styles';
+import CareerAccordions from './CareerAccordion';
+import { careers } from './Careers';
 
 export default () => (
   <CareerContainer>
     <TitleBox>
       <Title>Career</Title>
     </TitleBox>
-    <CareerAccordion>
-      <AccordionSummary
-        expandIcon={<ExpandMoreIcon htmlColor="#FFFFFF" />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
-        <Typography sx={{ fontSize: '20px', fontWeight: '700' }}><CareerSpan>2022.05 ~ </CareerSpan>KineMaster</Typography>
-      </AccordionSummary>
-      <AccordionDetails>
-        <Typography sx={{ paddingLeft: '16px', color: 'rgba(255, 255, 255, 0.8)', fontWeight: '700' }}>
-          Service Platform Team 1 / Developer
-        </Typography>
-        <CareerLine sx={{ paddingLeft: '16px' }}>
-          <CareerDot />
-          <Typography sx={{ paddingLeft: '', color: 'rgba(255, 255, 255, 0.8)' }}>
-            Service Platform Team 1 / Developer
-          </Typography>
-        </CareerLine>
-      </AccordionDetails>
-    </CareerAccordion>
+    {careers.map((career) => (
+      <CareerAccordions career={career} />
+    ))}
   </CareerContainer>
 );

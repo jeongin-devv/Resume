@@ -36,6 +36,7 @@ export const tools = {
     { level: 0, name: 'Notion' },
     { level: 0, name: 'Jira / Confluence' },
     { level: 0, name: 'Git / Github' },
+    { level: 0, name: 'Azure' },
     { level: 0, name: 'Devtools' },
     { level: 0, name: 'DBeaver' },
     { level: 0, name: 'vsCode' },

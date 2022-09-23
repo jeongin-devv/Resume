@@ -1,7 +1,7 @@
 import React from 'react';
-import Introduce from 'Components/Introduce/Introduce';
-import Skill from 'Components/Skill/Skill';
-import Career from 'Components/Career/Career';
+import {
+  Introduce, Skill, Career, Project,
+} from '../Components';
 import { MainContainer } from './styles';
 
 export default () => (
@@ -9,5 +9,6 @@ export default () => (
     <Introduce />
     <Skill />
     <Career />
+    <Project />
   </MainContainer>
 );

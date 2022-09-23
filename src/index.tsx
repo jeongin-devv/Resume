@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import App from './Components/App/App';
+import { App } from './Components';
 // import GlobalStyle from './Styles/global-styles';
 import theme from './Styles/theme';
 import { ThemeProvider } from './Styles/themed-components';

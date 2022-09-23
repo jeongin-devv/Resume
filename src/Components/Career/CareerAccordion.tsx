@@ -25,11 +25,17 @@ export default ({ career } : AccordionProps) => (
       </Typography>
     </AccordionSummary>
     <AccordionDetails>
-      <Typography sx={{ paddingLeft: '8px', color: 'rgba(255, 255, 255, 0.8)', fontWeight: '700' }}>
+      <Typography sx={{
+        paddingLeft: '8px',
+        paddingBottom: '8px',
+        color: 'rgba(255, 255, 255, 0.8)',
+        fontWeight: '700',
+      }}
+      >
         { career.department }
       </Typography>
       {career.tasks.map((task) => (
-        <CareerLine sx={{ paddingLeft: '16px' }}>
+        <CareerLine sx={{ padding: '8px 0 8px 16px' }}>
           <CareerDot />
           <Typography sx={{ paddingLeft: '', color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px' }}>
             { task }

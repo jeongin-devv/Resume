@@ -9,7 +9,6 @@ export default () => (
     </TitleBox>
     <OpenInNewIcon />
     <div style={{}}>
-      fdsa
     </div>
     <div style={{}}>
       fdsa

@@ -1,5 +1,5 @@
 import React from 'react';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import ProjectContent from './ProjectContent';
 import { ProjectContainer, TitleBox, Title } from './styles';
 
 export default () => (
@@ -7,13 +7,6 @@ export default () => (
     <TitleBox>
       <Title>Project</Title>
     </TitleBox>
-    <OpenInNewIcon />
-    <div style={{}}>
-    </div>
-    <div style={{}}>
-    </div>
-    <div style={{}}>
-      fdsa
-    </div>
+    <ProjectContent />
   </ProjectContainer>
 );

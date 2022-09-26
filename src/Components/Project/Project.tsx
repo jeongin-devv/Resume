@@ -11,7 +11,6 @@ export default () => (
     <div style={{}}>
     </div>
     <div style={{}}>
-      fdsa
     </div>
     <div style={{}}>
       fdsa

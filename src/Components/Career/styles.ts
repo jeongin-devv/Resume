@@ -38,6 +38,15 @@ export const CareerAccordion = styled(Accordion)`
     background-color: rgba( 255, 255, 255, 0.13 );
     color: #FFFFFF;
   }
+
+  @media (hover: hover) {
+    &.MuiAccordion-rounded:hover { 
+      background-color: rgba( 255, 255, 255, 0.3 ); 
+    }
+    &.MuiAccordion-rounded.Mui-expanded {
+      background-color: rgba( 255, 255, 255, 0.13 );
+    }
+  }
 `;
 
 export const CareerSpan = styled.span`

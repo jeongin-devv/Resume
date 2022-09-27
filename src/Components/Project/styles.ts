@@ -15,9 +15,11 @@ export const ProjectContainer = styled(Box)`
 
 export const TitleBox = styled(Box)`
   &.MuiBox-root {
-    display:flex;
+    display:inline-flex;
     justify-content:flex-start;
     align-items:center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 `;
 
@@ -47,12 +49,17 @@ export const ProjectContent = styled(Box)`
     background-color:var(--project-name-background);
     border-radius:var(--project-name-border-radius);
     margin: 16px 0;
+    cursor:pointer;
+  }
+
+  &.MuiBox-root:hover {
+    background-color:rgba( 255, 255, 255, 0.3 )
   }
 `;
 
 export const ProjectDate = styled.span`
-  padding: 4px 16px;
-  border-radius:16px;
+  padding: 4px 8px;
+  border-radius:4px;
   font-size:16px;
   font-weight:700;
   line-height:20px;
@@ -72,15 +79,17 @@ export const ProjectName = styled(Typography)`
 
 export const ModalBox = styled(Box)`
   &.MuiBox-root {
+    display:inline-block;
+    overflow:scroll;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100vw - 100px);
     max-width:1024px;
-    // height: 200px;
+    max-height:80vh;
     background-color: #333333;
-    padding:16px;
+    padding:24px 20px;
     border-radius:16px;
     -webkit-tap-highlight-color:transparent;
   }
@@ -91,18 +100,14 @@ export const ModalBox = styled(Box)`
   &.MuiBox-root:focus {
     outline:none;
   }
-
-  ul, li {
-    margin:8px;
-    padding:0;
-  }
 `;
 
 export const ColorSpan = styled.span<{randomColor : any}>`
   background-color: ${(props) => props.randomColor};
   padding:4px 8px;
   line-height:14px;
-  font-size:14px;
+  font-size:12px;
+  font-weight:700;
   border-radius:4px;
-  margin-right:4px;
+  margin:2px;
 `;

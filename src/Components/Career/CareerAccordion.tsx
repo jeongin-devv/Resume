@@ -24,10 +24,10 @@ export default ({ career } : AccordionProps) => (
         { career.name }
       </Typography>
     </AccordionSummary>
-    <AccordionDetails>
+    <AccordionDetails sx={{ padding: '0 8px 16px 16px' }}>
       <Typography sx={{
         paddingLeft: '8px',
-        paddingBottom: '8px',
+        paddingBottom: '4px',
         color: 'rgba(255, 255, 255, 0.8)',
         fontWeight: '700',
       }}
@@ -35,7 +35,7 @@ export default ({ career } : AccordionProps) => (
         { career.department }
       </Typography>
       {career.tasks.map((task) => (
-        <CareerLine sx={{ padding: '8px 0 8px 16px' }}>
+        <CareerLine sx={{ padding: '4px 0 0 16px' }}>
           <CareerDot />
           <Typography sx={{ paddingLeft: '', color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px' }}>
             { task }

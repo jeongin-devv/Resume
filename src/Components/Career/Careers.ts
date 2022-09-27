@@ -14,8 +14,8 @@ export const careers : CareerType[] = [
       'Frontend Developer (React, TypeScript)',
       'User Service Frontend',
       'BackOffice Console Frontend',
-      'Service Email Templates Publish',
       'Cross Browsing Test Management',
+      'Service Email Templates Publish',
     ],
   },
   {

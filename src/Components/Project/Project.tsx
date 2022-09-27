@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectContent from './ProjectContent';
+import { projects } from './Projects';
 import { ProjectContainer, TitleBox, Title } from './styles';
 
 export default () => (
@@ -7,6 +8,8 @@ export default () => (
     <TitleBox>
       <Title>Project</Title>
     </TitleBox>
-    <ProjectContent />
+    {projects.map((project) => (
+      <ProjectContent project={project} />
+    ))}
   </ProjectContainer>
 );

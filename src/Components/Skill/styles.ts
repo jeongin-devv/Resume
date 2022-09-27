@@ -49,12 +49,21 @@ export const HoverQuestion = styled(Box)`
 
 export const HoverBox = styled(Box)`
   &.MuiBox-root {
+    display:inline-block;
+    position:relative;
+  }
+
+  div {
+    width:80px;
     position:absolute;
-    margin-left:100px;
+    background-color:white;
     background-color:white;
     padding:8px 16px;
     border-radius:20px;
+    margin-top:-45px;
+    margin-left:10px;
   }
+  
   & .MuiTypography-root {
     color:black;
     font-size:12px;

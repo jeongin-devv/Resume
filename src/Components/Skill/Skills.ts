@@ -31,15 +31,15 @@ export const backend = {
 export const tools = {
   title: 'Tools',
   skills: [
+    { level: 0, name: 'Firebase' },
+    { level: 0, name: 'Git / Github' },
     { level: 0, name: 'Figma' },
     { level: 0, name: 'Zeplin' },
-    { level: 0, name: 'Notion' },
     { level: 0, name: 'Jira / Confluence' },
-    { level: 0, name: 'Git / Github' },
     { level: 0, name: 'Azure' },
+    { level: 0, name: 'Notion' },
     { level: 0, name: 'Devtools' },
     { level: 0, name: 'DBeaver' },
-    { level: 0, name: 'vsCode' },
     { level: 0, name: 'Crontab' },
   ],
 };

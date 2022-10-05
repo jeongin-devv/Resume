@@ -13,10 +13,11 @@ export default ({ education } : { education : EducationType }) => (
     </div>
     {education.descriptions.map((description) => (
       <Typography
+        key={description}
         sx={{
           paddingLeft: '8px',
           color: 'rgba(255, 255, 255, 0.8);',
-          fontSize: '14px',
+          fontSize: '12px',
         }}
       >
         {description}

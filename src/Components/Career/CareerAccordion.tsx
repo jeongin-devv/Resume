@@ -35,7 +35,7 @@ export default ({ career } : AccordionProps) => (
         { career.department }
       </Typography>
       {career.tasks.map((task) => (
-        <CareerLine sx={{ padding: '4px 0 0 16px' }}>
+        <CareerLine key={task} sx={{ padding: '4px 0 0 16px' }}>
           <CareerDot />
           <Typography sx={{ paddingLeft: '', color: 'rgba(255, 255, 255, 0.8)', fontSize: '14px' }}>
             { task }

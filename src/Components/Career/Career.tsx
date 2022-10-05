@@ -9,7 +9,7 @@ export default () => (
       <Title>Career</Title>
     </TitleBox>
     {careers.map((career) => (
-      <CareerAccordions career={career} />
+      <CareerAccordions key={career.name} career={career} />
     ))}
   </CareerContainer>
 );

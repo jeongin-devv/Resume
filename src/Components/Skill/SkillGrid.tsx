@@ -13,13 +13,13 @@ const skillArray = [
 export default () => (
   <>
     {skillArray.map((skill) => (
-      <SkillBox>
+      <SkillBox key={skill.title}>
         <SkillName>
           <Typography sx={{ fontWeight: '700' }}>{skill.title}</Typography>
         </SkillName>
         <SkillList>
           {skill.skills.map((obj) => (
-            <Skill>
+            <Skill key={obj.name}>
               <SkillLevel level={obj.level}>{obj.level}</SkillLevel>
               {obj.name}
             </Skill>
@@ -33,7 +33,7 @@ export default () => (
       </SkillName>
       <SkillList>
         {tools.skills.map((obj) => (
-          <Skill>
+          <Skill key={obj.name}>
             <SkillDot />
             {obj.name}
           </Skill>

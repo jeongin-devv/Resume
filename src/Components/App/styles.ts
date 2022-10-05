@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const AppContainer = styled.div`
-  --app-container-height: calc(100vh - 10.3125rem);
+  --app-container-height: calc(100vh - 8.1875rem);
 `;
 
 export const AppContents = styled.div`

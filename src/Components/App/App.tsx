@@ -4,8 +4,7 @@ import Footer from 'Components/Footer/Footer';
 import RootRouter from 'Router/RootRouter';
 import { AppContainer, AppContents } from './styles';
 
-const HeaderTitle = 'Resume : Per Aspera ad Astra';
-const footerDescription = '역경을 헤치고 저 별을 향해';
+const HeaderTitle = 'Resume';
 
 const App = () => (
   <AppContainer className="App">
@@ -13,7 +12,7 @@ const App = () => (
     <AppContents>
       <RootRouter />
     </AppContents>
-    <Footer description={footerDescription} />
+    <Footer />
   </AppContainer>
 );
 

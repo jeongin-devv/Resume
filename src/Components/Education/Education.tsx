@@ -7,7 +7,7 @@ export default () => (
   <EducationContainer>
     <Title>Education</Title>
     {Educations.map((education) => (
-      <Contents education={education} />
+      <Contents key={education.title} education={education} />
     ))}
   </EducationContainer>
 );

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import LatestDate from 'Util/LatestDate';
 
 const Copyright = () => {
   const copyrightName = 'Jeongin Oh';
@@ -10,7 +11,7 @@ const Copyright = () => {
   return (
     <Typography variant="body2" color="white" align="center">
       {'Copyright © '}
-      <Link color="inherit" href={domain}>
+      <Link color="inherit" href={domain} target="_blank">
         {copyrightName}
       </Link>{' '}
       {new Date().getFullYear()}
@@ -19,19 +20,19 @@ const Copyright = () => {
   );
 };
 
-interface FooterProps {
-  description: string;
-  // title: string;
-}
-
-const Footer = (props: FooterProps) => {
-  const { description } = props;
+const Footer = () => {
+  const inputDate = {
+    year: 2022,
+    month: 10,
+    date: 5,
+  };
+  const date = LatestDate(inputDate);
 
   return (
     <Box
       component="footer"
       sx={{
-        py: 3, borderTopStyle: 'double', borderTopWidth: 3, borderColor: 'white',
+        py: 1, borderTopStyle: 'double', borderTopWidth: 3, borderColor: 'white',
       }}
     >
       <Container maxWidth="lg">
@@ -40,9 +41,9 @@ const Footer = (props: FooterProps) => {
           align="center"
           color="gray"
           component="p"
-          sx={{ textDecoration: 'underline' }}
+          sx={{ fontStyle: 'italic', fontSize: '14px' }}
         >
-          {description}
+          {`Latest Updated : ${date.date} + ${date.day}`}
         </Typography>
         <Copyright />
       </Container>

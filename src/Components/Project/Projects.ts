@@ -108,7 +108,7 @@ export const projects : ProjectType[] = [
         <ul>
           <li>Vue-CLI Package Build (Vue 2)</li>
           <li>Single Page Application / CSR</li>
-          <li>Component Design : Page Component → Section Component → Function Component</li>
+          <li>Component Design : Page → Section → Function</li>
           <li>CSS Design : 디자이너가 작성한 Figma Style Guide 에 맞춘 Class name 기반 CSS Guide Line 작성</li>
           <li>Responsive Publishing : HTML5 / CSS3, Animation, Vue-Transition, Vue-KeepAlive, Countup.js</li>
           <li>Vuex를 활용한 상태 관리 - 컴포넌트 간 데이터 흐름 추적</li>

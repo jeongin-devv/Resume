@@ -27,7 +27,7 @@ export default ({ project } : { project: ProjectType }) => {
           <Typography sx={{ fontSize: '20px', fontWeight: '700', marginTop: '8px' }}>{project.title}</Typography>
           <TitleBox sx={{ padding: '8px 0' }}>
             {project.stack.map((text) => (
-              <ColorSpan randomColor={RandomColor}>{text}</ColorSpan>))}
+              <ColorSpan key={text} randomColor={RandomColor}>{text}</ColorSpan>))}
           </TitleBox>
           <Sanitizer contents={project.contents} />
         </ModalBox>

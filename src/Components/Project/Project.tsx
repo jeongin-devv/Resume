@@ -9,7 +9,7 @@ export default () => (
       <Title>Project</Title>
     </TitleBox>
     {projects.map((project) => (
-      <ProjectContent project={project} />
+      <ProjectContent key={project.title} project={project} />
     ))}
   </ProjectContainer>
 );

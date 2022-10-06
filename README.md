@@ -1,5 +1,3 @@
-
-## Hold off
 ## Resume
 
 > **IDE :** vsCode for MacOS  

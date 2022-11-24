@@ -94,6 +94,10 @@ export const ModalBox = styled(Box)`
     -webkit-tap-highlight-color:transparent;
   }
 
+  &.MuiBox-root::-webkit-scrollbar {
+    width:0px;
+  } 
+
   &.MuiBox-root:active {
     outline:none;
   }

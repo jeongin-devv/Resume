@@ -7,6 +7,26 @@ export interface ProjectType {
 
 export const projects : ProjectType[] = [
   {
+    title: 'KineMaster Bulk Email Console',
+    duration: '22.11 ~ - 23.01',
+    stack: [
+      'React', 'TypeScript', 'JavaScript', 'Mobx',
+      'Material UI', 'Styled-Component',
+      'IndexedDB', 'Sanitizer',
+    ],
+    contents: `
+      <hr />
+      <ul>
+        <li>KineMaster의 사용자를 대상으로 한 이메일 발송 서비스 Frontend 개발</li>
+        <li>MUI, Styled-Component 를 활용한 컴포넌트 모듈화 / 공통화</li>
+        <li>Mobx 를 활용한 상태 관리 / 기능 로직 분리 설계</li>
+        <li>IndexedDB 등의 Web Storage 를 활용한 이용 내역, 페이지 상태 저장, 토큰 관리</li>
+        <li>스크립트 조작 방지를 위한 Sanitizer 사용</li>
+      </ul>
+      <hr />
+    `,
+  },
+  {
     title: 'KineMaster Cross Browsing Test',
     duration: '22.08 ~ - 22.10',
     stack: ['React', 'TypeScript', 'Figma', 'LambdaTest'],

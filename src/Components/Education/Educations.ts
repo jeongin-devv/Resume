@@ -7,18 +7,17 @@ export interface EducationType {
 export const Educations : EducationType[] = [
   {
     date: '22.05 ~ ing',
-    title: 'Nomad Coder',
+    title: 'Udemy',
     descriptions: [
-      '- Frontend: React.js, TypeScript, Firebase 등',
-      '- Backend : Firebase, GraphQL 등',
+      '- Frontend: React.js, Next.js, JavaScript, TypeScript 등',
+      '- Theory: Clean Code, 자료 구조, 알고리즘 등',
     ],
   },
   {
-    date: '21.04 ~ ing',
-    title: 'Udemy',
+    date: '22.05 ~ ing',
+    title: 'Nomad Coder',
     descriptions: [
-      '- Frontend: React.js, JavaScript, TypeScript 등',
-      '- Theory: Clean Code, 자료 구조, 알고리즘 등',
+      '- Frontend: React.js, Next.js, TypeScript 등',
     ],
   },
   {

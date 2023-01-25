@@ -12,10 +12,11 @@ export const careers : CareerType[] = [
     department: 'Service Platform Team 1 / Developer',
     tasks: [
       'Frontend Developer (React, TypeScript)',
-      'User Service Frontend',
-      'BackOffice Console Frontend',
-      'Cross Browsing Test Management',
-      'Service Email Templates Publish',
+      'User Service Frontend Development',
+      'BackOffice Console Frontend Development',
+      'Cross Browsing Testing Management',
+      'Service Email Templates Development',
+      'Bulk Email Console Frontend Development',
     ],
   },
   {

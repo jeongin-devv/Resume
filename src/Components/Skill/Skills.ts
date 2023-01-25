@@ -8,11 +8,11 @@ export const frontend = {
     { level: 3, name: 'HTML/CSS' },
     { level: 3, name: 'Styled-Components' },
     { level: 3, name: 'Material-UI' },
+    { level: 2, name: 'JQuery' },
     { level: 2, name: 'Redux' },
+    { level: 2, name: 'Next.js' },
     { level: 2, name: 'Vue.js' },
     { level: 2, name: 'Vuex' },
-    { level: 2, name: 'Vuetify' },
-    { level: 2, name: 'JQuery' },
   ],
 };
 
@@ -31,14 +31,14 @@ export const backend = {
 export const tools = {
   title: 'Tools',
   skills: [
-    { level: 0, name: 'Firebase' },
     { level: 0, name: 'Git / Github' },
+    { level: 0, name: 'Azure DevOps' },
     { level: 0, name: 'Figma' },
     { level: 0, name: 'Zeplin' },
     { level: 0, name: 'Jira / Confluence' },
-    { level: 0, name: 'Azure' },
     { level: 0, name: 'Notion' },
-    { level: 0, name: 'Devtools' },
+    { level: 0, name: 'Yarn' },
+    { level: 0, name: 'Chrome Devtools' },
     { level: 0, name: 'DBeaver' },
     { level: 0, name: 'Crontab' },
   ],

@@ -7,8 +7,27 @@ export interface ProjectType {
 
 export const projects : ProjectType[] = [
   {
+    title: 'KineMaster Templates Management Console',
+    duration: '23.01 ~ - ing',
+    stack: [
+      'React', 'TypeScript', 'JavaScript', 'Storybook',
+      'Material UI', 'Styled-Component',
+      'Mobx',
+    ],
+    contents: `
+      <hr />
+      <ul>
+        <li>KineMaster에서 제공하는 Video Templates Management Console Frontend 개발</li>
+        <li>Storybook, Material UI, Styled-Components 를 결합한 Component Design 제시</li>
+        <li>Mobx 를 활용한 상태 관리 / Action Modularization</li>
+        <li>Web Storage와 MongoDB 를 활용한 Console 이용 내역 관리</li>
+      </ul>
+      <hr />
+    `,
+  },
+  {
     title: 'KineMaster Bulk Email Console',
-    duration: '22.11 ~ - 23.01',
+    duration: '22.11 ~ 23.01',
     stack: [
       'React', 'TypeScript', 'JavaScript', 'Mobx',
       'Material UI', 'Styled-Component',
@@ -28,7 +47,7 @@ export const projects : ProjectType[] = [
   },
   {
     title: 'KineMaster Cross Browsing Test',
-    duration: '22.08 ~ - 22.10',
+    duration: '22.08 ~ 22.10',
     stack: ['React', 'TypeScript', 'Figma', 'LambdaTest'],
     contents: `
       <hr />
@@ -43,7 +62,7 @@ export const projects : ProjectType[] = [
   },
   {
     title: 'KineMaster Email Template',
-    duration: '22.08 ~ - 22.09',
+    duration: '22.08 ~ 22.09',
     stack: ['HTML5', 'CSS3', 'Figma', 'Email on Acid'],
     contents: `
       <hr />

@@ -17,6 +17,7 @@ export const careers : CareerType[] = [
       'Cross Browsing Testing Management',
       'Service Email Templates Development',
       'Bulk Email Console Frontend Development',
+      'Templates Management Console Frontend Development',
     ],
   },
   {

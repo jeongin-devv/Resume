@@ -23,8 +23,8 @@ const Copyright = () => {
 const Footer = () => {
   const inputDate = {
     year: 2023,
-    month: 2,
-    date: 20,
+    month: 8,
+    date: 19,
   };
   const date = LatestDate(inputDate);
 

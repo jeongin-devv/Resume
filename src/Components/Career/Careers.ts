@@ -18,6 +18,7 @@ export const careers : CareerType[] = [
       'Service Email Templates Development',
       'Bulk Email Console Frontend Development',
       'Templates Management Console Frontend Development',
+      'Official Homepage Account Frontend Development',
     ],
   },
   {

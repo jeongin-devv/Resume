@@ -7,8 +7,31 @@ export interface ProjectType {
 
 export const projects : ProjectType[] = [
   {
+    title: 'KineMaster Official Homepage Account',
+    duration: '23.05 ~ - ing',
+    stack: [
+      'Next.js', 'TypeScript', 'JavaScript',
+      'Material UI', 'Serverless API',
+      'Mobx', 'next-auth', 'iron-session',
+    ],
+    contents: `
+      <hr />
+      <ul>
+        <li>KineMaster Official Homepage Account 기능 개발</li>
+        <li>Email, Apple, Google 통합 로그인 개발</li>
+        <li>next-auth 를 활용한 Server Side Login Session 관리</li>
+        <li>iron-session 을 이용한 유저 데이터 저장, 수집</li>
+        <li>Server Side Rendering 을 이용한 다국어, 페이지 권한 처리, 토큰 관리</li>
+        <li>Material UI 를 활용한 반응형 레이아웃 개발</li>
+        <li>Next.js Serverless API 를 활용한 Service Parameter 암호화</li>
+        <li>JSEncrypt 를 이용한 민감정보 비대칭키 암호화 (RSA)</li>
+      </ul>
+      <hr />
+    `,
+  },
+  {
     title: 'KineMaster Templates Management Console',
-    duration: '23.01 ~ - ing',
+    duration: '23.01 ~ - 05.',
     stack: [
       'React', 'TypeScript', 'JavaScript', 'Storybook',
       'Material UI', 'Styled-Component',

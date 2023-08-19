@@ -3,6 +3,7 @@ export const frontend = {
   skills: [
     { level: 3, name: 'Javascript' },
     { level: 3, name: 'TypeScript' },
+    { level: 3, name: 'Next.js' },
     { level: 3, name: 'React.js' },
     { level: 3, name: 'Mobx' },
     { level: 3, name: 'HTML/CSS' },
@@ -10,7 +11,6 @@ export const frontend = {
     { level: 3, name: 'Material-UI' },
     { level: 2, name: 'JQuery' },
     { level: 2, name: 'Redux' },
-    { level: 2, name: 'Next.js' },
     { level: 2, name: 'Vue.js' },
     { level: 2, name: 'Vuex' },
   ],

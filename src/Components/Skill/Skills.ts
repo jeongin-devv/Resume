@@ -31,6 +31,7 @@ export const backend = {
 export const tools = {
   title: 'Tools',
   skills: [
+    { level: 0, name: 'Storybook' },
     { level: 0, name: 'Git / Github' },
     { level: 0, name: 'Azure DevOps' },
     { level: 0, name: 'Figma' },

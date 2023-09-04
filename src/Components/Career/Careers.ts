@@ -7,7 +7,15 @@ export interface CareerType {
 
 export const careers : CareerType[] = [
   {
-    date: '22.05 ~ Work',
+    date: '23.09 ~ Work',
+    name: 'Hongik University',
+    department: 'Information and Computing Center / Developer',
+    tasks: [
+      'Development, distribution and maintenance of programs necessary for academic affairs and administration',
+    ],
+  },
+  {
+    date: '22.05 ~ 23.09',
     name: 'KineMaster',
     department: 'Service Platform Team 1 / Developer',
     tasks: [

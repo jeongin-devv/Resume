@@ -8,7 +8,7 @@ export interface ProjectType {
 export const projects : ProjectType[] = [
   {
     title: 'KineMaster Official Homepage Account',
-    duration: '23.05 ~ - ing',
+    duration: '23.05 ~ 23.09',
     stack: [
       'Next.js', 'TypeScript', 'JavaScript',
       'Material UI', 'Serverless API',
@@ -31,7 +31,26 @@ export const projects : ProjectType[] = [
   },
   {
     title: 'KineMaster Templates Management Console',
-    duration: '23.01 ~ - 05.',
+    duration: '23.01 ~ 23.05.',
+    stack: [
+      'React', 'TypeScript', 'JavaScript', 'Storybook',
+      'Material UI', 'Styled-Component',
+      'Mobx', 'React-Cookie',
+    ],
+    contents: `
+      <hr />
+      <ul>
+        <li>KineMaster에서 제공하는 Video Templates Management Console Frontend 개발</li>
+        <li>Storybook, Material UI, Styled-Components 를 결합한 Component Design 제시</li>
+        <li>Mobx 를 활용한 상태 관리 / Action Modularization</li>
+        <li>React-Cookie 와 MongoDB 를 활용한 Console 내 기록 관리 , 페이지 상태 유지</li>
+      </ul>
+      <hr />
+    `,
+  },
+  {
+    title: 'KineMaster Console Storybook',
+    duration: '23.01 ~ 23.05.',
     stack: [
       'React', 'TypeScript', 'JavaScript', 'Storybook',
       'Material UI', 'Styled-Component',
@@ -40,10 +59,11 @@ export const projects : ProjectType[] = [
     contents: `
       <hr />
       <ul>
-        <li>KineMaster에서 제공하는 Video Templates Management Console Frontend 개발</li>
-        <li>Storybook, Material UI, Styled-Components 를 결합한 Component Design 제시</li>
-        <li>Mobx 를 활용한 상태 관리 / Action Modularization</li>
-        <li>Web Storage와 MongoDB 를 활용한 Console 이용 내역 관리</li>
+        <li>KineMaster Admin Console 에서 사용하는 Development Guide 작성 / 관리</li>
+        <li>Atomic Design Pattern 을 반영한 Component Design Architecture 설계</li>
+        <li>Material UI, Styled-Components 를 결합한 Component Implement</li>
+        <li>Hook, Context API, Mobx 등의 상태 관리 라이브러리와 결합하여 사용한 예시 코드 작성</li>
+        <li>Mock Service Worker 를 사용한 Mockup API 사용 예시 코드 작성</li>
       </ul>
       <hr />
     `,
